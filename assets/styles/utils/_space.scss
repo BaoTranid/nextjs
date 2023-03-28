@@ -1,0 +1,32 @@
+@for $i from 0 through 13 {
+  $value: $i * 5;
+  $unit: '';
+
+  @if $i != 0 {
+    $unit: 'px';
+  }
+
+  .p-#{$i * 5} {
+    padding: #{$value}#{$unit} !important;
+  }
+  .pt-#{$i * 5} {
+    padding-top: #{$value}#{$unit} !important;
+  }
+  .pr-#{$i * 5} {
+    padding-right: #{$value}#{$unit} !important;
+  }
+  .pb-#{$i * 5} {
+    padding-bottom: #{$value}#{$unit} !important;
+  }
+  .pl-#{$i * 5} {
+    padding-left: #{$value}#{$unit} !important;
+  }
+  .pv-#{$i * 5} {
+    padding-left: #{$value}#{$unit} !important;
+    padding-right: #{$value}#{$unit} !important;
+  }
+  .ph-#{$i * 5} {
+    padding-bottom: #{$value}#{$unit} !important;
+    padding-top: #{$value}#{$unit} !important;
+  }
+}
